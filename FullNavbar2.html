@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .main {
+            background-color: aqua; 
+            top: 0;
+            position: sticky;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden; 
+        }
+
+        body {
+            height: 1000px;
+            margin: 0; 
+        }
+
+        li {
+            float: left;
+        }
+
+        li.right {
+            float: right;
+        }
+
+        li a {
+            text-decoration: none;
+            padding: 10px 20px; /* Adjust padding for better visibility */
+            background-color: chartreuse;
+            border: 1px solid white;
+            margin: 4px;
+            display: block; /* Ensure block display for full height */
+        }
+
+        .dropdown1 {
+            display: inline-block;
+        }
+
+        /* .right{
+            display:inline-block
+        } */
+
+        .dropdown_content {
+            position: absolute;
+            display: none;
+        }
+
+        .dropdown_content2{
+            position:absolute;
+            display: none;
+        }
+
+        .dropdown_content a {
+            background-color: rgb(152, 255, 195);
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+            display: block;
+            margin-top: 4px;
+            padding: 8px;
+        }
+
+        .dropdown_content2 a{
+            background-color: rgb(152, 255, 195);
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+            display: block;
+            margin-top: 4px;
+            padding: 8px;
+
+        }
+
+         a:hover {
+            background-color: rgb(255, 248, 180);
+        }
+
+        li.dropdown1 a.dropbutton:hover {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        li.right a.dropbutton2:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+
+        li.dropdown1:hover .dropdown_content {
+            display: block;
+        }
+
+        li.right:hover .dropdown_content2{
+            display:block;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="home2.html" target="_blank">Home</a></li> <!-- <i class="fa-solid fa-house"></i> -->
+            <li><a href="Contact.html" target="_blank">Contact</a></li> <!-- <i class="fa-solid fa-phone"></i> -->
+            <li><a href="" target="_blank">About us</a></li>
+            <li class="dropdown1"><a href="" target="_blank" class="dropbutton">Sale</a>
+                <div class="dropdown_content">
+                    <a href="" style="margin-top: 15px;">Electronic sale</a>
+                    <a href="">Home and furniture</a>
+                    <a href="">Book Store</a>
+                </div>
+            </li>
+            <li class="right"><a href="" target="_blank">Help</a></li>   <!-- <i class="fa-solid fa-info"></i> -->
+            <li class="right"><a href="" target="_blank" class="dropbutton2">Login</a>
+                <div class="dropdown_content2">
+                    <a href="" style="margin-top: 15px;"><i class="fa-regular fa-user"></i>My Profile</a>
+                    <a href="" target="_blank"><i class="fa-solid fa-box"></i>Orders</a>
+                    <a href="" target="_blank"><i class="fa-regular fa-heart"></i>Wishlist</a>
+                    <a href="" target="_blank"><i class="fa-solid fa-gift"></i>Rewards</a>
+                    <a href="" target="_blank"><i class="fa-solid fa-credit-card"></i>Gift Cards</a>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="heading">
+
+        <h1>This is an example of Navigation Bar Structure</h1>
+        <h2>Welcome to my Website</h2>
+    </div> 
+
+</body>
+</html>
+
+
+
+
