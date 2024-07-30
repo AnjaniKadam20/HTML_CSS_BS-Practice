@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:antiquewhite;
+        }
+        form{
+            max-width: 600px;
+            margin: 20px auto;
+            /* top right left bottom */
+            padding: 20px;
+            /* background-color:crimson; */
+
+        }
+
+        label{
+            display: block;
+            /* one after the other */
+            margin-bottom: 5px;
+
+        }
+
+        h2{
+            margin-top: 0;
+            text-align: center;
+            background-color:crimson;
+        }
+
+        #name,#add,#contact,#dob,#email,#guard{
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 6px;
+
+        }
+        #resetbtn,#submitbtn{
+            padding: 10px 20px;
+            background-color:bisque;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #resetbtn:hover,#submitbtn:hover{
+            background-color:chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+<!-- <form action="" method=""></form> -->
+<!-- get post|post-when the data has to be sent ,get-when you want to get it  -->
+<form autocomplete="off" novalidate></form>
+    <!-- <form  action="demo.html" autocomplete="off" novalidate> -->
+        <!-- <form autocomplete="off" target="_blank"> -->
+        <!-- no validate,target='_blank-new blank' -->
+        <h2>Admission Form</h2>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="add">Address</label>
+        <textarea name="add" id="add" required></textarea><br><br>
+        <!-- <input type="text" id="add" name="add"><br><br> -->
+
+        <label for="contact">Contact</label>
+        <input type="text" id="contact" name="contact" maxlength="10" required><br><br>
+
+        <label for="dob">DOB</label>
+        <input type="date" id="dobt" name="dob" required><br><br>
+
+        <label for="email">email</label>
+        <input type="text" id="email" name="email" required placeholder="abc@gmail.com"><br><br>
+
+        <label for="guard">Guardian</label>
+        <input type="text" id="guard" name="guard" required><br><br>
+
+
+
+
+        </fieldset>
+
+        <fieldset>
+                <legend>Eductional Information</legend>
+                <label for="">Completed Education</label>
+                <input type="text" required>
+
+                <br><br>
+
+                <label for="">Admission Year</label>
+                <input type="date" name="" id="" required>
+                <br><br>
+
+                <label for="">Previous Marksheet</label>
+                <input type="file" required>
+                <br><br>
+
+                <label for="">Select Courses</label>
+                <select name="" id="">
+                    <option value="">Degree</option>
+                    <option value="">Diploma</option>
+                    <option value="">Ph.D</option>
+
+                </select>
+
+        </fieldset> <br><br>
+
+        <input type="reset" value="Reset" id="resetbtn">
+        <input type="submit" value="Submit" id="submitbtn">
+
+      
+
+
+
+
+
+
+    </form>
+    <!-- <h1>Form submitted succesfully</h1> -->
+</body>
+</html>
+<!-- admission form: name,address,contact,education,email,guardian,date of birth,previous year marksheet ,admission year , course -->
+<!-- Form tag-label tag-input tag |select tag|Option tag|textarea|Fieldset tag|legend-->
+
+<!-- add multiple fields, can add resume 
+Admission form|login form|register form/Sign up(name ,contact,dob,email,username,password,confirm password,reset register,ender(radio button),) with validation , no empty form -->
+
+
