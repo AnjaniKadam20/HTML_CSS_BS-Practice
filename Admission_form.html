@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <style>
+        body {
+    background-color: #ffefa0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+.Admission_Form {
+    background-color: #fff;
+    padding: 42px; 
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px; 
+    
+    
+}
+
+.Inside_Admission {
+    margin-bottom: 16px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; 
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+legend {
+            font-size: 20px; 
+            font-weight: bold;
+            margin-bottom: 15px; 
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #fddea0;
+            color: black;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        button[type="reset"]:hover {
+            background-color: #f2b566;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <form autocomplete="off"></form>
+    <div class="Admission_Form">
+        <h2>Admission Form</h2>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+            <div class="Inside_Admission">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">email</label>
+                <input type="text" id="email" name="email" required placeholder="abc@gmail.com"><br><br>
+
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" name="contact" maxlength="10" required><br><br>
+
+                <label for="add">Address</label>
+                <textarea name="add" id="add" required></textarea><br><br>
+            
+        
+        
+                <label for="dob">DOB</label>
+                <input type="date" id="dobt" name="dob" required><br><br>
+        
+              
+        
+                <label for="guard">Guardian</label>
+                <input type="text" id="guard" name="guard" required><br><br>
+          
+         
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+          
+            </fieldset>
+
+        
+<br><br>
+            <fieldset>
+
+        
+        
+                <legend>Eductional Information</legend>
+                
+
+                <label for="Completed Education">Completed Education</label>
+                <input type="text" required>
+    
+                <br><br>
+    
+                <label for="Admission Year">Admission Year</label>
+                <input type="date" name="Admission Year" id="Admission Year" required>
+                <br><br>
+    
+                <label for="Previous Marksheet">Previous Marksheet</label>
+                <input type="file" required>
+                <br><br>
+    
+               
+                <label for="Courses">Select Courses</label>
+                <select name="" id="">
+                    <option value="Degree">Degree</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Ph.D">Ph.D</option>
+
+                </select>
+                <br><br>
+
+            </fieldset>
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+
+        
+     
+            
+
+               
+
+            </div>
+    </div>
+</body>
+</html>
