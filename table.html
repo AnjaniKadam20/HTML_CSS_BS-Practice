@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table,th,td{
+        border:2px solid black;
+        border-collapse:collapse;  /*this will allow to create normal columns and rows  */
+        padding: 15px;
+        text-align: center;
+
+        
+    }
+    table{
+        height: 200px;
+        width:100%;
+        background-color: aqua;
+    }
+    th{
+        background-color: rgb(115, 255, 0);
+        color: blue;
+    }
+    /* th{
+        border:2px solid black
+    }
+    td{
+        border:2px solid black
+    } */
+
+    /* instead of writing for all different upper tag can be given as: table,th,td and then remove th and td */
+   
+</style>
+</head>
+<body>
+    <table>
+        <caption>happy dAYS</caption>
+        <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th colspan="2">Contact</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>john</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>harry</td>
+            <td>67549</td>
+            <td>67449</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>hema</td>
+            <td>675231</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>rakhi</td>
+            <td>78654</td>
+        </tr>
+    </table>
+    <br>
+    
+    <table>
+        <tr>
+            <th>Sr no</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>john</td>
+            <td>happy</td>
+            <td>ruru</td>
+        </tr>
+        <tr>
+            <th>contact</th>
+            <td>8907</td>
+            <td>67543</td>
+            <td>098765</td>
+        </tr>
+    </table>
+</body>
+</html> 
