@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            background-color: aqua;
+            list-style-type: none;   /* Removes bullet points */ 
+            margin: 0;
+            padding: 0;
+            overflow: hidden;   /* Hidden:To prevent from exceeding value to be shown  options:auto,hidden,scroll,visible*/  /* remove when converting to vertical */ 
+            /* width: 200px; /* To covert to vertical */  
+            /* position: fixed; */
+            top: 0;
+            position:sticky
+            
+        }
+
+        li {
+            float: left;   /* To convert to vertical have to remove this  */ 
+        }
+
+        li a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        li a:hover{
+            background-color: burlywood;
+            /* color: rgb(17, 32, 3);  color that changes the text when hover over it  */
+        }
+
+        .right {
+            float: right;
+        }
+
+        .active_link{
+            background-color: chartreuse;
+            font-size: large;
+        }
+        body{
+            height: 1000px;
+        }
+
+        .heading{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html" target="_blank" class="active_link">Home</a></li>
+        <li><a href="Contact.html" target="_blank">Contact</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Support</a></li>
+        <li class="right"><a href="">Login</a></li>
+        <li class="right"><a href="">Help</a></li>
+    </ul>
+
+    <div class="heading">
+
+        <h1>this is an example of fixed navigation bar</h1>
+        <h2>Welcome to my website</h2>
+        <h3>This is html and css</h3>
+    </div>   <!-- div.heading    for class -->
+
+    <!-- <div id="a1"></div>            div#a1   for class -->
+</body>
+</html>
