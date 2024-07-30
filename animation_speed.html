@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border:1px solid black;
+            padding: 5px;
+            width:100px;
+            height:30px;
+            background-color: brown;
+            color: white;
+            position: relative;
+            animation: animation1 5s infinite;/* duration,iteration */
+        }
+
+        @keyframes animation1 {
+            0%{left: 0px;}
+            100%{left: 500px;}
+            
+        }
+
+        .a1{
+            animation-timing-function: linear;
+        }
+        .a2{
+            animation-timing-function:ease;
+        }
+        .a3{
+            animation-timing-function: ease-in;
+        }
+        .a4{
+            animation-timing-function:ease-out;
+            
+        }
+        .a5{
+            animation-timing-function:ease-in-out;
+        }
+
+        /* .a6{
+            transition-timing-function:cubic;
+        }
+
+        .a7{
+            transition-timing-function:step;
+        } */
+
+        p:hover{
+            /* width: 300px; */
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="a1">Linear</p>
+    <p class="a2">Ease</p>
+    <p class="a3">ease-in</p>
+    <p class="a4">ease-out</p>
+    <p class="a5">ease-in-out</p>
+    <p class="a6">Cubic</p>
+    <p class="a7">Step</p>
+    
+</body>
+</html>
+<!-- use div tag  -->
+
+
+
+
+<div class="button-container">
+    <button type="reset" id="resetbtn">Reset</button>
+    <button type="submit" id="submitbtn">Submit</button>
+</div>
