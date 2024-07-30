@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            background-color: aqua;
+            list-style-type: none;   /* Removes bullet points */ 
+            margin: 0;
+            padding: 0;
+            overflow: hidden;   /* Hidden:To prevent from exceeding value to be shown  options:auto,hidden,scroll,visible*/  /* remove when converting to vertical */ 
+            /* width: 200px; /* To covert to vertical */  
+            /* position: fixed; */
+            top: 0;
+            position:sticky
+            
+        }
+
+        li {
+            float: left;   /* To convert to vertical have to remove this  */ 
+        }
+
+        li a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            background-color: chartreuse;
+            border: 1px solid white;
+            margin: 4px;
+        }
+
+        li a:hover{
+            background-color: burlywood;
+            /* color: rgb(17, 32, 3);  color that changes the text when hover over it  */
+        }
+
+        .right {
+            float: right;
+        }
+
+        .active_link{
+            background-color: chartreuse;
+            font-size: large;
+        }
+        body{
+            height: 1000px;
+        }
+
+        .heading{
+            padding-top: 100px;
+        }
+        .Dropdown{
+            /* background-color: rgb(203, 203, 255); */
+            display: inline-block;
+
+        }
+        .dropdown-content{
+            background-color: bisque;
+            border: 2px solid palevioletred;
+            display: none;
+        }
+        .Dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-content a{
+            background-color: rgb(55, 0, 119);
+            color: rgb(255, 255, 255);
+            border: 2px solid black;
+            display: block;
+            margin-top: 4px;
+            padding: 8px;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html" target="_blank" class="active_link">Home</a></li>
+        <li><a href="Contact.html" target="_blank">Contact</a></li>
+        <li><a href="">About us</a></li>
+        <li class="Dropdown"><a href="" target="_blank">Sale</a>
+            <div class="dropdown-content">
+                <a href="">Electronic sale</a>
+                <a href="">Home and furniture</a>
+                <a href="">Book store</a>
+            </div>
+        
+        </li>
+        <li class="right"><a href="">Login</a></li>
+        <li class="right"><a href="">Help</a></li>
+      
+    </ul>
+
+    <div class="heading">
+
+        <h1>this is an example of fixed navigation bar</h1>
+        <h2>Welcome to my website</h2>
+        <h3>This is html and css</h3>
+    <!-- </div>   div.heading    for class -->
+
+    <!-- <div id="a1"></div>            div#a1   for class -->
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            top: 0;
+            position:sticky
+    
+
+        }
+
+        ul{
+            background-color: aqua;
+            list-style-type: none;
+            padding: 0px;
+            margin-top: 15px;
+        
+            /* display: inline-block; */
+
+        }   
+        body{
+            height:1000px ;
+        }
+
+        li{
+            float: left;
+        }
+
+         li.right {
+            float: right;
+        }
+
+
+        li a{
+            text-decoration: none;
+            padding: 10px;
+            background-color:chartreuse;
+            /* color: antiquewhite; */
+            border: 1px solid white;
+            margin: 4px;
+        }
+
+        .dropdown1{
+            display: inline-block;
+
+        }
+
+        .dropdown_content{
+            position:absolute ;
+            display:none ;
+
+        }
+
+        .dropdown_content a{
+            background-color: cornflowerblue;
+            color: black;
+            border: 2px solid black;
+            display: block;
+            margin-top: 4px;
+            padding: 8px;
+        }
+
+        li a:hover{
+            background-color: rgb(255, 248, 180);
+        }
+
+        li.dropdown1 a.dropbutton:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+
+        li.dropdown1:hover .dropdown_content{
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="Contact.html" target="_blank">Contact</a></li>
+            <li><a href="" target="_blank">About us</a></li>
+            <li class="dropdown1"><a href="" target="_blank" class="dropbutton">Sale</a>
+                <div class="dropdown_content">
+                    <a href="" style="margin-top: 15px;">Electronic sale</a>
+                    <a href="">Home and furniture</a>
+                    <a href="">Book Store</a>
+                </div>
+            </li>
+            <li class="right"><a href="help.html" target="_blank">Help</a></li>
+            <li class="right"><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+    
+
+    </div>
+</body>
+</html> -->
+<!-- Font awesome -->
