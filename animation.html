@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+            animation-name: arrow;
+            animation-duration: 6s;
+            position: relative;
+            animation-delay: 3s;
+            /* animation-delay: -2s; */  /* if you want to skip |animation delay depens upon animation duration for negative value */
+            animation-iteration-count: 2;   /* it is the number of times the animation will be carried out */
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate;it works animation iteration count is given */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused;it will pause */
+            /* animation-play-state: running;it will run */
+
+            
+            
+
+        }
+
+        img{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+            animation-name: arrow;
+            animation-duration: 6s;
+            position: relative;
+            animation-delay: 3s;
+            /* animation-delay: -2s; */  /* if you want to skip |animation delay depens upon animation duration for negative value */
+            animation-iteration-count: 2;   /* it is the number of times the animation will be carried out */
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate;it works animation iteration count is given */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused;it will pause */
+            /* animation-play-state: running;it will run */
+
+        }
+        /* @keyframes arrow { */
+            /* from{background-color: cornflowerblue;}
+            to{background-color: blue;} */
+            /* 0%{background-color:aqua; left:0 ; top:0;}
+            20%{background-color:greenyellow; left:200px ; top:0;}
+            50%{background-color:blue; left: 200px; top: 200px;}
+             75%{background-color:red; left:0; top: 200px;} 
+            100%{background-color:purple; left:0 ; top:0;}
+        } */
+        @keyframes arrow {
+            /* from{background-color: cornflowerblue;}
+            to{background-color: blue;} */
+            0%{background-color:aqua; left:0 ; top:0;}
+            20%{background-color:greenyellow; left:1000px ; top:0;}
+            50%{background-color:blue; left: 200px; top: 200px;}
+             75%{background-color:red; left:0; top: 200px;}  
+            100%{background-color:purple; left:0 ; top:0;}
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>This is animation property</div> -->
+    <img src="https://images.unsplash.com/photo-1718762538704-9698cd001106?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" height="200px" width="200px">
+</body>
+</html>
+<!-- animation name,duration,timing function,delay -->
+<!-- iteration,direction,full mode ,play state-->
